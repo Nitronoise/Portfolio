@@ -1,0 +1,391 @@
+@import "config";
+@import "menu";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: $primary-color;
+  color: set-text-color($primary-color);
+  width: 100%;
+  line-height: 1.5rem;
+  margin: 0;
+  overflow-x: hidden;
+
+  .txt-type > .txt {
+    border-right: 0.2rem solid #777;
+  }
+  //Headings
+  h1,
+  h2,
+  h3 {
+    font-weight: 400;
+    &.lg-heading {
+      font-size: 4.5rem;
+      font-family: "Black Ops One", cursive;
+    }
+  }
+}
+/* Cursor */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  font-family: "Black Ops One", cursive;
+}
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  padding: 0.2rem 4rem;
+  min-height: calc(100vh - 40px);
+  .icons {
+    margin-top: 1rem;
+    a {
+      padding: 0.4rem;
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+    }
+  }
+}
+#home {
+  .lg-heading {
+    font-family: "Libre Barcode 128 Text", cursive;
+  }
+  .sm-heading {
+    font-family: "Special Elite", cursive;
+  }
+}
+
+//-------------------------------Home-------------------------------
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.header-overlay {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+  background: #0e0e11;
+  opacity: 0.65;
+}
+
+.header-content {
+  z-index: 2;
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 30vh;
+}
+//----------------------------------About---------------------------------
+.about-info {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 1rem;
+  display: grid;
+  grid-template-areas:
+    "bioimage bio bio"
+    "skill-box job1 job1"
+    "skill-box job2 job2";
+  h3 {
+    color: $secondary-color;
+    text-transform: uppercase;
+    font-family: "Black Ops One", cursive;
+  }
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: $secondary-color 1px solid;
+  }
+  .bio {
+    grid-area: bio;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-family: "Poiret One", cursive;
+    letter-spacing: 2px;
+    border: $secondary-color 1px solid;
+    border-radius: 4px;
+  }
+  .job-1 {
+    grid-area: job1;
+  }
+  .job-2 {
+    grid-area: job2;
+  }
+  .skill-box {
+    grid-area: skill-box;
+  }
+  .job {
+    background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+    padding: 0.2rem;
+    border-radius: 5px;
+    text-align: center;
+    border: $secondary-color 1px solid;
+    transition: 0.5s;
+    @include gray;
+    &:before {
+      content: "";
+      top: 0;
+      left: 0;
+      background: rgba(255, 255, 255, 0.03);
+      pointer-events: none;
+    }
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgb(13, 13, 14);
+    }
+  }
+}
+@import "progress";
+
+#main-footer {
+  text-align: center;
+  padding: 0.5rem;
+  background: lighten($primary-color, 3);
+  color: set-text-color($primary-color);
+  height: 40px;
+}
+.skill-box {
+  @include flex-center;
+  justify-content: space-evenly;
+  background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+  border-radius: 5px;
+  text-align: center;
+  @include cyan-border;
+  transition: 0.5s;
+
+  &:before {
+    content: "";
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.03);
+    pointer-events: none;
+  }
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgb(13, 13, 14);
+  }
+  .skills {
+    width: 55%;
+    @include gray;
+    list-style: none;
+
+    h3 {
+      margin: 20px 0 -15px 0;
+      color: $secondary-color;
+      text-transform: uppercase;
+    }
+    h4 {
+      margin: 0 0 -18px 0;
+      font-family: "Orbitron", sans-serif;
+      font-size: 0.1rem;
+      color: white;
+      letter-spacing: 4px;
+    }
+    li {
+      margin: 20px 0;
+    }
+    .bar {
+      background: #1d2027;
+      display: block;
+      height: 14px;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #2187e7b3;
+      span {
+        height: 14px;
+        float: left;
+        background: #2187e7;
+      }
+    }
+  }
+}
+@import "mobile";
+//-----------------------------Projects Section---------------------------
+#projects {
+  min-height: 100vh;
+  background: #1e1e1e;
+  .lg-heading {
+    font-family: "Black Ops One", cursive;
+  }
+}
+.contain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  grid-gap: 30px;
+  width: 95%;
+  margin-bottom: 50px;
+  h3 {
+    margin: 5px 0 0 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-family: "Orbitron", sans-serif;
+  }
+  .flip-card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    .face {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+      @include cyan-border;
+    }
+    .face1 {
+      background: #333;
+      @include flex-center;
+      z-index: 1;
+      transform-origin: bottom;
+      img {
+        max-width: 110px;
+      }
+    }
+    .face2 {
+      color: whitesmoke;
+      font-family: "Poiret One", cursive;
+      letter-spacing: 2px;
+      background: #333;
+      @include flex-center;
+      padding: 10px 15px;
+      transform-origin: top;
+      transform: translateY(100%) rotateX(90deg);
+      i {
+        font-size: 20px;
+        margin-left: 5px;
+      }
+      a {
+        padding: 8px 10px;
+        font-size: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: "Orbitron", sans-serif;
+        letter-spacing: 2px;
+        color: #1d1b1b;
+        background: #fff;
+        transition: ease-in-out 0.4s;
+        &:hover {
+          background: #1b1b1b;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.contain .flip-card:hover .face1 {
+  transform: translateY(-100%) rotateX(90deg);
+  background: #03e9f4;
+}
+.contain .flip-card:hover .face2 {
+  transform: translateY(0) rotateX(0);
+}
+
+//----------------------------------Contact--------------------------------
+#contact {
+  .lg-heading {
+    font-family: "Black Ops One", cursive;
+  }
+  .sm-heading {
+    font-family: "Poiret One", cursive;
+  }
+}
+.boxes {
+  @include flex(row);
+  min-height: 45vh;
+  text-align: center;
+  a {
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Orbitron", sans-serif;
+    color: #03e9f4;
+    text-decoration: none;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    &:nth-child(1) {
+      filter: hue-rotate(290deg);
+    }
+    &:nth-child(3) {
+      filter: hue-rotate(110deg);
+    }
+
+    &:hover {
+      background: #03e9f4;
+      color: #fff;
+      box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+    }
+    span {
+      position: absolute;
+      display: block;
+      &:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #03e9f4);
+        animation: animate1 1s linear infinite;
+      }
+      &:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #03e9f4);
+        animation: animate2 1s linear infinite;
+        animation-delay: 0.25s;
+      }
+      &:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #03e9f4);
+        animation: animate3 1s linear infinite;
+        animation-delay: 0.5s;
+      }
+      &:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #03e9f4);
+        animation: animate4 1s linear infinite;
+        animation-delay: 0.75s;
+      }
+    }
+  }
+}

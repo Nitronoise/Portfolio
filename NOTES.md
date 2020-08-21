@@ -1,0 +1,3 @@
+- Change the main font
+- Add glowing effect
+- Match the theme used

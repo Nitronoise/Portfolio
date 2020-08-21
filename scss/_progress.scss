@@ -1,0 +1,134 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+
+  .card {
+    position: relative;
+    @include flex-center;
+    height: 230px;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    h2 {
+      font-family: "Orbitron", sans-serif;
+    }
+
+    svg {
+      position: relative;
+      width: 150px;
+      height: 150px;
+
+      circle {
+        width: 100%;
+        height: 100%;
+        fill: none;
+        stroke: #191919;
+        stroke-width: 8;
+        stroke-linecap: round;
+        transform: translate(5px, 5px);
+        &:nth-child(2) {
+          stroke-dasharray: 440;
+          stroke-dashoffset: 440;
+        }
+      }
+    }
+
+    .text {
+      position: relative;
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: 0.5s;
+    }
+
+    .percent {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      box-shadow: inset 0 0 50px #000;
+      background: #222;
+
+      .number {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include flex-center;
+        border-radius: 50%;
+
+        h2 {
+          font-weight: 700;
+          font-size: 30px;
+          transition: 0.5s;
+          span {
+            font-size: 24px;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.card:nth-child(1) svg circle:nth-child(2),
+.card:nth-child(2) svg circle:nth-child(2),
+.card:nth-child(3) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 90) / 100);
+  animation: circle1 4s normal ease-out 1;
+  stroke: #ff8800;
+}
+.card:nth-child(2) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 80) / 100);
+  animation-name: circle2;
+  stroke: #00a1ff;
+}
+.card:nth-child(3) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 60) / 100);
+  animation-name: circle3;
+  stroke: #eeff04;
+}
+.card2:nth-child(1) svg circle:nth-child(2),
+.card2:nth-child(2) svg circle:nth-child(2),
+.card2:nth-child(3) svg circle:nth-child(2) {
+  stroke-dashoffset: 0;
+  stroke: #3d6875fa;
+  animation-iteration-count: 0;
+}
+.card2:nth-child(2) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 90) / 100);
+}
+.card2:nth-child(3) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 80) / 100);
+}
+
+// Circle load animaton
+@keyframes circle1 {
+  10% {
+    stroke-dashoffset: 450;
+  }
+  100% {
+    stroke-dashoffset: 45;
+  }
+}
+@keyframes circle2 {
+  10% {
+    stroke-dashoffset: 450;
+  }
+  100% {
+    stroke-dashoffset: 90;
+  }
+}
+@keyframes circle3 {
+  10% {
+    stroke-dashoffset: 450;
+  }
+  100% {
+    stroke-dashoffset: 180;
+  }
+}
