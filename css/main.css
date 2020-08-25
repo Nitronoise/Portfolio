@@ -81,7 +81,7 @@
       width: 250px;
       height: 250px;
       border-radius: 50%;
-      background: url(./img/B&W-Profile.png);
+      background: url(./img/Logos/B&W-Profile.png);
       background-position: center;
       background-size: cover;
       border: solid 2px #4cade2; }
@@ -653,6 +653,8 @@ main {
     overflow: hidden;
     transition: 0.5s;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); }
+    .boxes a hr {
+      color: inherit; }
     .boxes a:nth-child(1) {
       filter: hue-rotate(290deg); }
     .boxes a:nth-child(3) {
