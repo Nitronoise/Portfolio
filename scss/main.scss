@@ -332,6 +332,9 @@ main {
     overflow: hidden;
     transition: 0.5s;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    hr {
+      color: inherit;
+    }
     &:nth-child(1) {
       filter: hue-rotate(290deg);
     }
