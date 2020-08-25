@@ -45,9 +45,6 @@ class TypeWriter {
 
 // Init On DOM Load
 document.addEventListener("DOMContentLoaded", init);
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector("#vid-bg").setAttribute("autoplay", "true");
-});
 // Init App
 function init() {
   const txtElement = document.querySelector(".txt-type");

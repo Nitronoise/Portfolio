@@ -135,10 +135,9 @@ body {
     body h1.lg-heading,
     body h2.lg-heading,
     body h3.lg-heading {
-      font-size: 4.5rem;
+      font-size: 4.1rem;
       font-family: "Black Ops One", cursive; }
 
-/* Cursor */
 a {
   color: #fff;
   text-decoration: none; }
@@ -164,7 +163,7 @@ main {
         transition: all 0.3s ease-out; }
 
 #home .lg-heading {
-  font-family: "Libre Barcode 128 Text", cursive; }
+  font-family: "Poiret One", cursive; }
 
 #home .sm-heading {
   font-family: "Special Elite", cursive; }
@@ -176,10 +175,9 @@ main {
   width: 100%;
   height: 100vh;
   overflow: hidden; }
-
-.fullscreen-video-wrap video {
-  min-height: 100%;
-  min-width: 100%; }
+  .fullscreen-video-wrap video {
+    min-height: 100%;
+    min-width: 100%; }
 
 .header-overlay {
   height: 100vh;
@@ -434,7 +432,7 @@ main {
       flex-direction: column;
       height: 60vh; }
       #contact .boxes a {
-        font-size: 15px;
+        font-size: 12px;
         padding: 20px 25px;
         -webkit-box-reflect: inherit; } }
 
@@ -450,7 +448,8 @@ main {
   #contact .boxes {
     height: 70vh; }
   #contact a {
-    font-size: 0.9rem; }
+    font-size: 13px;
+    padding: 17px 22px; }
   #home {
     justify-content: center;
     display: flex; }
@@ -546,7 +545,8 @@ main {
   main#contact h2 {
     font-size: 0.8rem; }
   main#contact .boxes a {
-    font-size: 0.5rem; } }
+    font-size: 0.5rem;
+    padding: 15px 20px; } }
 
 #projects {
   min-height: 100vh;
@@ -606,7 +606,7 @@ main {
         font-size: 20px;
         margin-left: 5px; }
       .contain .flip-card .face2 a {
-        padding: 8px 10px;
+        padding: 10px 10px;
         font-size: 10px;
         text-transform: uppercase;
         text-decoration: none;
@@ -643,8 +643,8 @@ main {
   .boxes a {
     position: relative;
     display: inline-block;
-    padding: 25px 30px;
-    font-size: 15px;
+    padding: 20px 25px;
+    font-size: 13px;
     font-weight: 600;
     font-family: "Orbitron", sans-serif;
     color: #03e9f4;
