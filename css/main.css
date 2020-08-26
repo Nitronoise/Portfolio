@@ -135,8 +135,9 @@ body {
     body h1.lg-heading,
     body h2.lg-heading,
     body h3.lg-heading {
-      font-size: 4.1rem;
-      font-family: "Black Ops One", cursive; }
+      font-size: 3.5rem;
+      font-family: "Black Ops One", cursive;
+      margin-left: 2rem; }
 
 a {
   color: #fff;
@@ -155,7 +156,8 @@ main {
   padding: 0.2rem 4rem;
   min-height: calc(100vh - 40px); }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    margin-left: 2rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
@@ -166,18 +168,24 @@ main {
   font-family: "Poiret One", cursive; }
 
 #home .sm-heading {
-  font-family: "Special Elite", cursive; }
+  font-family: "Special Elite", cursive;
+  margin-left: 2rem; }
 
 .fullscreen-video-wrap {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden; }
   .fullscreen-video-wrap video {
     min-height: 100%;
-    min-width: 100%; }
+    min-width: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%; }
 
 .header-overlay {
   height: 100vh;
@@ -358,13 +366,6 @@ main {
   100% {
     stroke-dashoffset: 180; } }
 
-#main-footer {
-  text-align: center;
-  padding: 0.5rem;
-  background: #272727;
-  color: #fff;
-  height: 40px; }
-
 .skill-box {
   display: flex;
   flex-direction: column;
@@ -397,6 +398,7 @@ main {
       margin: 0 0 -18px 0;
       font-family: "Orbitron", sans-serif;
       font-size: 0.1rem;
+      text-transform: uppercase;
       color: white;
       letter-spacing: 4px; }
     .skill-box .skills li {
@@ -443,8 +445,6 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
-  #contact .lg-heading {
-    font-size: 2.5rem; }
   #contact .boxes {
     height: 70vh; }
   #contact a {
@@ -478,7 +478,7 @@ main {
       background-position: center;
       background-size: cover; }
   #about .lg-heading {
-    font-size: 2.5rem; }
+    margin: 25px 0; }
   #about .about-info {
     width: 100%;
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3" "skill-box";
@@ -503,8 +503,7 @@ main {
     #about .about-info .job .card h2 {
       font-size: 1rem; }
   #projects .lg-heading {
-    font-size: 2.5rem;
-    margin-bottom: 30px; }
+    margin: 25px 0; }
   #projects .contain {
     display: flex;
     flex-direction: column;
@@ -523,25 +522,25 @@ main {
     align-items: center; }
     #projects .contain .flip-card {
       height: 180px;
-      width: 250px; }
-    #projects .contain .flip-card .face2 {
-      font-size: 0.8rem; }
+      width: 250px;
+      margin-bottom: 10px; }
+      #projects .contain .flip-card .face2 {
+        font-size: 0.8rem; }
   main#about .about-info .container {
     flex-direction: column;
     align-items: center; }
   main#about .about-info .skill-box {
     flex-direction: column; }
     main#about .about-info .skill-box .skills {
-      width: 75%; }
+      width: 80%; }
   main#about .about-info h3 {
-    font-size: 1.3rem; }
+    font-size: 1.1rem; }
   main#about .about-info h4 {
-    font-size: 0.8rem; }
+    font-size: 0.5rem;
+    text-transform: uppercase; }
   main#about .about-info .bio-image {
     height: 150px;
     width: 150px; }
-  main#contact .lg-heading {
-    font-size: 2.5rem; }
   main#contact h2 {
     font-size: 0.8rem; }
   main#contact .boxes a {
@@ -552,15 +551,15 @@ main {
   min-height: 100vh;
   background: #1e1e1e; }
   #projects .lg-heading {
-    font-family: "Black Ops One", cursive; }
+    font-family: "Black Ops One", cursive;
+    margin-bottom: 2rem; }
 
 .contain {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 auto;
+  margin: 60px auto;
   grid-gap: 30px;
-  width: 95%;
-  margin-bottom: 50px; }
+  width: 95%; }
   .contain h3 {
     margin: 5px 0 0 0;
     color: #fff;
@@ -571,7 +570,8 @@ main {
   .contain .flip-card {
     position: relative;
     width: 300px;
-    height: 200px; }
+    height: 200px;
+    margin-bottom: 15px; }
     .contain .flip-card .face {
       position: absolute;
       top: 0;
@@ -697,3 +697,10 @@ main {
         background: linear-gradient(360deg, transparent, #03e9f4);
         animation: animate4 1s linear infinite;
         animation-delay: 0.75s; }
+
+#main-footer {
+  text-align: center;
+  padding: 0.5rem;
+  background: #272727;
+  color: #fff;
+  height: 40px; }
