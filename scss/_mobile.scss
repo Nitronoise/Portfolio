@@ -32,10 +32,15 @@
     text-align: center;
     .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem;
+      margin: 0 0 1rem 0;
     }
   }
   #contact {
+    .lg-heading {
+      margin: 15px 0 0 0;
+      font-size: 2.5rem;
+    }
+
     .boxes {
       height: 70vh;
     }
@@ -138,12 +143,17 @@
   #home {
     .lg-heading {
       font-size: 3.5rem;
+      margin-left: 0;
     }
     .sm-heading {
       font-size: 1.3rem;
     }
   }
   #projects {
+    .lg-heading {
+      font-size: 2.5rem;
+      margin-left: 0;
+    }
     .contain {
       @include flex(column);
       .flip-card {
@@ -157,6 +167,10 @@
     }
   }
   main#about {
+    .lg-heading {
+      font-size: 2.5rem;
+      margin-left: 0;
+    }
     .about-info {
       .container {
         flex-direction: column;
@@ -184,6 +198,10 @@
   }
 
   main#contact {
+    .lg-heading {
+      font-size: 2.5rem;
+      margin-left: 0;
+    }
     h2 {
       font-size: 0.8rem;
     }

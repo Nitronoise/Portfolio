@@ -444,7 +444,10 @@ main {
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin: 0 0 1rem 0; }
+  #contact .lg-heading {
+    margin: 15px 0 0 0;
+    font-size: 2.5rem; }
   #contact .boxes {
     height: 70vh; }
   #contact a {
@@ -512,9 +515,13 @@ main {
 
 @media screen and (max-width: 665px) {
   #home .lg-heading {
-    font-size: 3.5rem; }
+    font-size: 3.5rem;
+    margin-left: 0; }
   #home .sm-heading {
     font-size: 1.3rem; }
+  #projects .lg-heading {
+    font-size: 2.5rem;
+    margin-left: 0; }
   #projects .contain {
     display: flex;
     flex-direction: column;
@@ -526,6 +533,9 @@ main {
       margin-bottom: 10px; }
       #projects .contain .flip-card .face2 {
         font-size: 0.8rem; }
+  main#about .lg-heading {
+    font-size: 2.5rem;
+    margin-left: 0; }
   main#about .about-info .container {
     flex-direction: column;
     align-items: center; }
@@ -541,6 +551,9 @@ main {
   main#about .about-info .bio-image {
     height: 150px;
     width: 150px; }
+  main#contact .lg-heading {
+    font-size: 2.5rem;
+    margin-left: 0; }
   main#contact h2 {
     font-size: 0.8rem; }
   main#contact .boxes a {
@@ -628,7 +641,8 @@ main {
   transform: translateY(0) rotateX(0); }
 
 #contact .lg-heading {
-  font-family: "Black Ops One", cursive; }
+  font-family: "Black Ops One", cursive;
+  margin-left: 0; }
 
 #contact .sm-heading {
   font-family: "Poiret One", cursive; }
