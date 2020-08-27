@@ -136,8 +136,7 @@ body {
     body h2.lg-heading,
     body h3.lg-heading {
       font-size: 3.5rem;
-      font-family: "Black Ops One", cursive;
-      margin-left: 2rem; }
+      font-family: "Black Ops One", cursive; }
 
 a {
   color: #fff;
@@ -164,8 +163,7 @@ main {
         transition: all 0.3s ease-out; }
 
 #home .lg-heading {
-  font-family: "Poiret One", cursive;
-  margin-left: 0; }
+  font-family: "Poiret One", cursive; }
 
 #home .sm-heading {
   font-family: "Special Elite", cursive; }
@@ -201,6 +199,9 @@ main {
   position: absolute;
   margin: 0 auto;
   margin-top: 30vh; }
+
+#about .lg-heading {
+  margin-left: 2rem; }
 
 .about-info {
   grid-template-columns: repeat(3, 1fr);
@@ -415,6 +416,164 @@ main {
         float: left;
         background: #2187e7; }
 
+#projects {
+  min-height: 100vh;
+  background: #1e1e1e; }
+  #projects .lg-heading {
+    font-family: "Black Ops One", cursive;
+    margin: 2rem 0 2rem 2rem; }
+
+.contain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 60px auto;
+  grid-gap: 30px;
+  width: 95%; }
+  .contain h3 {
+    margin: 5px 0 0 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-family: "Orbitron", sans-serif; }
+  .contain .flip-card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 15px; }
+    .contain .flip-card .face {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+      border: #4cade2 1px solid; }
+    .contain .flip-card .face1 {
+      background: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      transform-origin: bottom; }
+      .contain .flip-card .face1 img {
+        max-width: 110px; }
+    .contain .flip-card .face2 {
+      color: whitesmoke;
+      font-family: "Poiret One", cursive;
+      letter-spacing: 2px;
+      background: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 15px;
+      transform-origin: top;
+      transform: translateY(100%) rotateX(90deg); }
+      .contain .flip-card .face2 i {
+        font-size: 20px;
+        margin-left: 5px; }
+      .contain .flip-card .face2 a {
+        padding: 10px 10px;
+        font-size: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: "Orbitron", sans-serif;
+        letter-spacing: 2px;
+        color: #1d1b1b;
+        background: #fff;
+        transition: ease-in-out 0.4s; }
+        .contain .flip-card .face2 a:hover {
+          background: #1b1b1b;
+          color: #fff;
+          cursor: pointer; }
+
+.contain .flip-card:hover .face1 {
+  transform: translateY(-100%) rotateX(90deg);
+  background: #03e9f4; }
+
+.contain .flip-card:hover .face2 {
+  transform: translateY(0) rotateX(0); }
+
+#contact .lg-heading {
+  font-family: "Black Ops One", cursive; }
+
+#contact .sm-heading {
+  font-family: "Poiret One", cursive; }
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 45vh;
+  text-align: center; }
+  .boxes a {
+    position: relative;
+    display: inline-block;
+    padding: 20px 25px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Orbitron", sans-serif;
+    color: #03e9f4;
+    text-decoration: none;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); }
+    .boxes a hr {
+      color: inherit; }
+    .boxes a:nth-child(1) {
+      filter: hue-rotate(290deg); }
+    .boxes a:nth-child(3) {
+      filter: hue-rotate(110deg); }
+    .boxes a:hover {
+      background: #03e9f4;
+      color: #fff;
+      box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4; }
+    .boxes a span {
+      position: absolute;
+      display: block; }
+      .boxes a span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #03e9f4);
+        animation: animate1 1s linear infinite; }
+      .boxes a span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #03e9f4);
+        animation: animate2 1s linear infinite;
+        animation-delay: 0.25s; }
+      .boxes a span:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #03e9f4);
+        animation: animate3 1s linear infinite;
+        animation-delay: 0.5s; }
+      .boxes a span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #03e9f4);
+        animation: animate4 1s linear infinite;
+        animation-delay: 0.75s; }
+
+#main-footer {
+  text-align: center;
+  padding: 0.5rem;
+  background: #272727;
+  color: #fff;
+  height: 40px; }
+
 @media screen and (min-width: 1636px) {
   #projects .contain {
     grid-template-columns: repeat(4, 1fr);
@@ -515,8 +674,7 @@ main {
 
 @media screen and (max-width: 665px) {
   #home .lg-heading {
-    font-size: 3.5rem;
-    margin-left: 0; }
+    font-size: 3.5rem; }
   #home .sm-heading {
     font-size: 1.3rem; }
   #projects .lg-heading {
@@ -552,169 +710,9 @@ main {
     height: 150px;
     width: 150px; }
   main#contact .lg-heading {
-    font-size: 2.5rem;
-    margin-left: 0; }
+    font-size: 2.5rem; }
   main#contact h2 {
     font-size: 0.8rem; }
   main#contact .boxes a {
     font-size: 0.5rem;
     padding: 15px 20px; } }
-
-#projects {
-  min-height: 100vh;
-  background: #1e1e1e; }
-  #projects .lg-heading {
-    font-family: "Black Ops One", cursive;
-    margin-bottom: 2rem; }
-
-.contain {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 60px auto;
-  grid-gap: 30px;
-  width: 95%; }
-  .contain h3 {
-    margin: 5px 0 0 0;
-    color: #fff;
-    text-align: center;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    font-family: "Orbitron", sans-serif; }
-  .contain .flip-card {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    margin-bottom: 15px; }
-    .contain .flip-card .face {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transition: 0.5s;
-      border: #4cade2 1px solid; }
-    .contain .flip-card .face1 {
-      background: #333;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      z-index: 1;
-      transform-origin: bottom; }
-      .contain .flip-card .face1 img {
-        max-width: 110px; }
-    .contain .flip-card .face2 {
-      color: whitesmoke;
-      font-family: "Poiret One", cursive;
-      letter-spacing: 2px;
-      background: #333;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 10px 15px;
-      transform-origin: top;
-      transform: translateY(100%) rotateX(90deg); }
-      .contain .flip-card .face2 i {
-        font-size: 20px;
-        margin-left: 5px; }
-      .contain .flip-card .face2 a {
-        padding: 10px 10px;
-        font-size: 10px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-family: "Orbitron", sans-serif;
-        letter-spacing: 2px;
-        color: #1d1b1b;
-        background: #fff;
-        transition: ease-in-out 0.4s; }
-        .contain .flip-card .face2 a:hover {
-          background: #1b1b1b;
-          color: #fff;
-          cursor: pointer; }
-
-.contain .flip-card:hover .face1 {
-  transform: translateY(-100%) rotateX(90deg);
-  background: #03e9f4; }
-
-.contain .flip-card:hover .face2 {
-  transform: translateY(0) rotateX(0); }
-
-#contact .lg-heading {
-  font-family: "Black Ops One", cursive;
-  margin-left: 0; }
-
-#contact .sm-heading {
-  font-family: "Poiret One", cursive; }
-
-.boxes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  min-height: 45vh;
-  text-align: center; }
-  .boxes a {
-    position: relative;
-    display: inline-block;
-    padding: 20px 25px;
-    font-size: 13px;
-    font-weight: 600;
-    font-family: "Orbitron", sans-serif;
-    color: #03e9f4;
-    text-decoration: none;
-    letter-spacing: 4px;
-    overflow: hidden;
-    transition: 0.5s;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); }
-    .boxes a hr {
-      color: inherit; }
-    .boxes a:nth-child(1) {
-      filter: hue-rotate(290deg); }
-    .boxes a:nth-child(3) {
-      filter: hue-rotate(110deg); }
-    .boxes a:hover {
-      background: #03e9f4;
-      color: #fff;
-      box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4; }
-    .boxes a span {
-      position: absolute;
-      display: block; }
-      .boxes a span:nth-child(1) {
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(90deg, transparent, #03e9f4);
-        animation: animate1 1s linear infinite; }
-      .boxes a span:nth-child(2) {
-        top: -100%;
-        right: 0;
-        width: 2px;
-        height: 100%;
-        background: linear-gradient(180deg, transparent, #03e9f4);
-        animation: animate2 1s linear infinite;
-        animation-delay: 0.25s; }
-      .boxes a span:nth-child(3) {
-        bottom: 0;
-        right: -100%;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(270deg, transparent, #03e9f4);
-        animation: animate3 1s linear infinite;
-        animation-delay: 0.5s; }
-      .boxes a span:nth-child(4) {
-        bottom: -100%;
-        left: 0;
-        width: 2px;
-        height: 100%;
-        background: linear-gradient(360deg, transparent, #03e9f4);
-        animation: animate4 1s linear infinite;
-        animation-delay: 0.75s; }
-
-#main-footer {
-  text-align: center;
-  padding: 0.5rem;
-  background: #272727;
-  color: #fff;
-  height: 40px; }
