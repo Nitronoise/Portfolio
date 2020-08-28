@@ -397,7 +397,7 @@ main {
     .skill-box .skills h4 {
       margin: 0 0 -18px 0;
       font-family: "Orbitron", sans-serif;
-      font-size: 0.1rem;
+      font-size: 10px;
       text-transform: uppercase;
       color: white;
       letter-spacing: 4px; }
@@ -704,7 +704,7 @@ main {
   main#about .about-info h3 {
     font-size: 1.1rem; }
   main#about .about-info h4 {
-    font-size: 0.5rem;
+    font-size: 9px;
     text-transform: uppercase; }
   main#about .about-info .bio-image {
     height: 150px;
