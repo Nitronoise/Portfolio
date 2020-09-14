@@ -261,10 +261,10 @@ main {
       height: 100%;
       transition: 0.5s;
       @include cyan-border;
+      @include flex-center;
     }
     .face1 {
       background: #333;
-      @include flex-center;
       z-index: 1;
       transform-origin: bottom;
       img {
