@@ -1,16 +1,13 @@
 .menu-btn {
-  position: absolute;
-  z-index: 10;
-  right: 35px;
-  top: 35px;
+  display: none;
   cursor: pointer;
   @include easeOut;
-
+  z-index: 9;
   .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: set-text-color($primary-color);
+    background-color: $btn-color;
     @include easeOut;
   }
   &.close {
@@ -30,55 +27,31 @@
   }
 }
 .menu {
-  position: fixed;
+  position: absolute;
   top: 0;
+  right: 0;
   width: 100%;
-  opacity: 0.97;
   visibility: hidden;
+  height: 220px;
+  @include easeOut;
+  box-shadow: -4px 20px 66px -31px rgba(31, 31, 31, 0.42);
+  background-color: $secondary-color;
+  transform: translate3d(0, -100%, 0);
   &.show {
     visibility: visible;
+    transform: translate3d(0, 0, 0);
   }
 
-  &-branding,
   &-nav {
     @include flex-center;
+    padding: 80px 0 0 0;
     flex-flow: column wrap;
-    float: left;
-    width: 50%;
-    height: 100vh;
+    width: 100%;
     overflow: hidden;
-  }
-  &-nav {
-    margin: 0;
-    padding: 0;
-    background: darken($primary-color, 5);
     list-style: none;
-    transform: translate3d(0, -100%, 0);
     @include easeOut;
-
-    &.show {
-      transform: translate3d(0, 0, 0);
-    }
   }
-  &-branding {
-    background: $primary-color;
-    transform: translate3d(0, 100%, 0);
-    @include easeOut;
 
-    &.show {
-      transform: translate3d(0, 0, 0);
-    }
-
-    .portrait {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      background: url(../img/Logos/B&W-Profile.png);
-      background-position: center;
-      background-size: cover;
-      border: solid 2px $secondary-color;
-    }
-  }
   .nav-item {
     transform: translate3d(600px, 0, 0);
     @include easeOut;
@@ -87,21 +60,23 @@
       transform: translate3d(0, 0, 0);
     }
     &.current > a {
-      color: $secondary-color;
+      color: $btn-color;
     }
   }
   .nav-link {
     display: block;
     position: relative;
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: Calibri;
     text-transform: uppercase;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     font-weight: 300;
-    color: set-text-color($primary-color);
+    color: $primary-color;
     @include easeOut;
 
     &:hover {
-      color: $secondary-color;
+      color: $btn-color;
     }
   }
 }
@@ -110,4 +85,51 @@
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }
+}
+#wrap-cover {
+  @include flex-center;
+  width: 100%;
+}
+
+.head-wrap {
+  @include flex(row);
+  justify-content: space-between;
+  width: 85%;
+  max-width: 1200px;
+  height: 75px;
+  margin: 0 auto;
+  padding: 10px 0;
+  z-index: 8;
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  .nav {
+    @include flex(row);
+    width: 350px;
+    a {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #f8f8f8;
+      font-family: Calibri;
+      font-weight: 500;
+      transition: 0.3s;
+      &:hover {
+        color: $btn-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.sticky {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  width: 85%;
+  margin: 0 auto;
+  height: 55px;
+  background-color: $secondary-color;
+  border-bottom: 1px solid #3c0081;
 }

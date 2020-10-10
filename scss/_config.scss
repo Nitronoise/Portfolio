@@ -1,8 +1,17 @@
-$primary-color: rgb(31, 31, 31);
-$secondary-color: #4cade2;
+$primary-color: #ffffff;
+$secondary-color: #3f079d;
+$btn-color: rgb(0, 189, 223);
+$text-color: #333;
 $show-home-image: true;
 $home-image: url(/img/bg.jpeg);
 $background-opacity: 0.8;
+#highlight {
+  color: $secondary-color;
+}
+@mixin debug {
+  outline: red solid 1px;
+}
+
 // Flex
 @mixin flex($direction) {
   display: flex;
@@ -15,6 +24,11 @@ $background-opacity: 0.8;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@mixin norm-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @mixin cyan-border {
@@ -95,13 +109,18 @@ $background-opacity: 0.8;
 }
 
 // Media query mixins
+@mixin mediaXs {
+  @media screen and (max-width: 370px) {
+    @content;
+  }
+}
 @mixin mediaSm {
-  @media screen and (max-width: 665px) {
+  @media screen and (max-width: 700px) {
     @content;
   }
 }
 @mixin mediaMd {
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: 1050px) {
     @content;
   }
 }
