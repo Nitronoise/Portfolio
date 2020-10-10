@@ -3,91 +3,608 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gugi&family=Poiret+One&family=Black+Ops+One&family=Special+Elite&display=swap"
-      rel="stylesheet"
-    />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     />
+    <link rel="stylesheet" href="css/main.css" />
+
     <title>Home</title>
   </head>
 
-  <body id="bg-img">
+  <body>
     <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
       <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
-        </div>
         <ul class="menu-nav">
-          <li class="nav-item current">
-            <a href="./index.html" class="nav-link">Home</a>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="./about.html" class="nav-link">About me</a>
+            <a href="#projects" class="nav-link">Projects</a>
           </li>
           <li class="nav-item">
-            <a href="./projects.html" class="nav-link">My projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="./contact.html" class="nav-link">Contact</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <main id="home">
-      <div class="fullscreen-video-wrap">
-        <video
-          id="vid-bg"
-          src="./img/Logos/Welcome.mp4"
-          autoplay
-          muted
-          loop
-        ></video>
+      <div id="wrap-cover">
+        <div id="sticky-wrap" class="head-wrap">
+          <a href="#home"> <img id="nav-limit" src="./img/Logo-svg.svg" /></a>
+          <div class="nav">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+          </div>
+        </div>
       </div>
-      <div class="header-overlay"></div>
-      <div class="header-content">
-        <h1 class="lg-heading">Al-hashimi Yaseen</h1>
+      <div class="intro-text">
+        <svg
+          id="SVG"
+          width="573"
+          height="60"
+          viewBox="0 0 573 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M24.62 4.775V9.89H8.395V21.165H21.045V26.28H8.395V43H2.125V4.775H24.62Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M36.7007 17.095C37.6173 15.555 38.8273 14.3633 40.3307 13.52C41.8707 12.64 43.6857 12.2 45.7757 12.2V18.69H44.1807C41.724 18.69 39.854 19.3133 38.5707 20.56C37.324 21.8067 36.7007 23.97 36.7007 27.05V43H30.4307V12.695H36.7007V17.095Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M64.6841 43.495C61.8241 43.495 59.2391 42.8533 56.9291 41.57C54.6191 40.25 52.8041 38.4167 51.4841 36.07C50.1641 33.6867 49.5041 30.9367 49.5041 27.82C49.5041 24.74 50.1824 22.0083 51.5391 19.625C52.8957 17.2417 54.7474 15.4083 57.0941 14.125C59.4407 12.8417 62.0624 12.2 64.9591 12.2C67.8557 12.2 70.4774 12.8417 72.8241 14.125C75.1707 15.4083 77.0224 17.2417 78.3791 19.625C79.7357 22.0083 80.4141 24.74 80.4141 27.82C80.4141 30.9 79.7174 33.6317 78.3241 36.015C76.9307 38.3983 75.0241 40.25 72.6041 41.57C70.2207 42.8533 67.5807 43.495 64.6841 43.495ZM64.6841 38.05C66.2974 38.05 67.8007 37.665 69.1941 36.895C70.6241 36.125 71.7791 34.97 72.6591 33.43C73.5391 31.89 73.9791 30.02 73.9791 27.82C73.9791 25.62 73.5574 23.7683 72.7141 22.265C71.8707 20.725 70.7524 19.57 69.3591 18.8C67.9657 18.03 66.4624 17.645 64.8491 17.645C63.2357 17.645 61.7324 18.03 60.3391 18.8C58.9824 19.57 57.9007 20.725 57.0941 22.265C56.2874 23.7683 55.8841 25.62 55.8841 27.82C55.8841 31.0833 56.7091 33.6133 58.3591 35.41C60.0457 37.17 62.1541 38.05 64.6841 38.05Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M101.902 12.2C104.286 12.2 106.412 12.695 108.282 13.685C110.189 14.675 111.674 16.1417 112.737 18.085C113.801 20.0283 114.332 22.375 114.332 25.125V43H108.117V26.06C108.117 23.3467 107.439 21.275 106.082 19.845C104.726 18.3783 102.874 17.645 100.527 17.645C98.1806 17.645 96.3106 18.3783 94.9173 19.845C93.5606 21.275 92.8823 23.3467 92.8823 26.06V43H86.6123V12.695H92.8823V16.16C93.909 14.9133 95.2106 13.9417 96.7873 13.245C98.4006 12.5483 100.106 12.2 101.902 12.2Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M129.645 17.81V34.585C129.645 35.7217 129.902 36.5467 130.415 37.06C130.965 37.5367 131.882 37.775 133.165 37.775H137.015V43H132.065C129.242 43 127.078 42.34 125.575 41.02C124.072 39.7 123.32 37.555 123.32 34.585V17.81H119.745V12.695H123.32V5.16H129.645V12.695H137.015V17.81H129.645Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M166.059 20.45V25.73H143.454V20.45H166.059Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M202.742 27.105C202.742 28.2417 202.668 29.2683 202.522 30.185H179.367C179.55 32.605 180.448 34.5483 182.062 36.015C183.675 37.4817 185.655 38.215 188.002 38.215C191.375 38.215 193.758 36.8033 195.152 33.98H201.917C201 36.7667 199.332 39.0583 196.912 40.855C194.528 42.615 191.558 43.495 188.002 43.495C185.105 43.495 182.502 42.8533 180.192 41.57C177.918 40.25 176.122 38.4167 174.802 36.07C173.518 33.6867 172.877 30.9367 172.877 27.82C172.877 24.7033 173.5 21.9717 174.747 19.625C176.03 17.2417 177.808 15.4083 180.082 14.125C182.392 12.8417 185.032 12.2 188.002 12.2C190.862 12.2 193.41 12.8233 195.647 14.07C197.883 15.3167 199.625 17.0767 200.872 19.35C202.118 21.5867 202.742 24.1717 202.742 27.105ZM196.197 25.125C196.16 22.815 195.335 20.9633 193.722 19.57C192.108 18.1767 190.11 17.48 187.727 17.48C185.563 17.48 183.712 18.1767 182.172 19.57C180.632 20.9267 179.715 22.7783 179.422 25.125H196.197Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M224.202 12.2C226.585 12.2 228.712 12.695 230.582 13.685C232.489 14.675 233.974 16.1417 235.037 18.085C236.1 20.0283 236.632 22.375 236.632 25.125V43H230.417V26.06C230.417 23.3467 229.739 21.275 228.382 19.845C227.025 18.3783 225.174 17.645 222.827 17.645C220.48 17.645 218.61 18.3783 217.217 19.845C215.86 21.275 215.182 23.3467 215.182 26.06V43H208.912V12.695H215.182V16.16C216.209 14.9133 217.51 13.9417 219.087 13.245C220.7 12.5483 222.405 12.2 224.202 12.2Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M242.54 27.71C242.54 24.6667 243.163 21.9717 244.41 19.625C245.693 17.2783 247.417 15.4633 249.58 14.18C251.78 12.86 254.218 12.2 256.895 12.2C258.875 12.2 260.818 12.64 262.725 13.52C264.668 14.3633 266.208 15.5 267.345 16.93V2.3H273.67V43H267.345V38.435C266.318 39.9017 264.888 41.1117 263.055 42.065C261.258 43.0183 259.187 43.495 256.84 43.495C254.2 43.495 251.78 42.835 249.58 41.515C247.417 40.1583 245.693 38.2883 244.41 35.905C243.163 33.485 242.54 30.7533 242.54 27.71ZM267.345 27.82C267.345 25.73 266.905 23.915 266.025 22.375C265.182 20.835 264.063 19.6617 262.67 18.855C261.277 18.0483 259.773 17.645 258.16 17.645C256.547 17.645 255.043 18.0483 253.65 18.855C252.257 19.625 251.12 20.78 250.24 22.32C249.397 23.8233 248.975 25.62 248.975 27.71C248.975 29.8 249.397 31.6333 250.24 33.21C251.12 34.7867 252.257 35.9967 253.65 36.84C255.08 37.6467 256.583 38.05 258.16 38.05C259.773 38.05 261.277 37.6467 262.67 36.84C264.063 36.0333 265.182 34.86 266.025 33.32C266.905 31.7433 267.345 29.91 267.345 27.82Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M308.677 4.775C312.747 4.775 316.304 5.56333 319.347 7.14C322.427 8.68 324.792 10.9167 326.442 13.85C328.129 16.7467 328.972 20.1383 328.972 24.025C328.972 27.9117 328.129 31.285 326.442 34.145C324.792 37.005 322.427 39.205 319.347 40.745C316.304 42.2483 312.747 43 308.677 43H296.192V4.775H308.677ZM308.677 37.885C313.151 37.885 316.579 36.675 318.962 34.255C321.346 31.835 322.537 28.425 322.537 24.025C322.537 19.5883 321.346 16.1233 318.962 13.63C316.579 11.1367 313.151 9.89 308.677 9.89H302.462V37.885H308.677Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M362.962 27.105C362.962 28.2417 362.888 29.2683 362.742 30.185H339.587C339.77 32.605 340.668 34.5483 342.282 36.015C343.895 37.4817 345.875 38.215 348.222 38.215C351.595 38.215 353.978 36.8033 355.372 33.98H362.137C361.22 36.7667 359.552 39.0583 357.132 40.855C354.748 42.615 351.778 43.495 348.222 43.495C345.325 43.495 342.722 42.8533 340.412 41.57C338.138 40.25 336.342 38.4167 335.022 36.07C333.738 33.6867 333.097 30.9367 333.097 27.82C333.097 24.7033 333.72 21.9717 334.967 19.625C336.25 17.2417 338.028 15.4083 340.302 14.125C342.612 12.8417 345.252 12.2 348.222 12.2C351.082 12.2 353.63 12.8233 355.867 14.07C358.103 15.3167 359.845 17.0767 361.092 19.35C362.338 21.5867 362.962 24.1717 362.962 27.105ZM356.417 25.125C356.38 22.815 355.555 20.9633 353.942 19.57C352.328 18.1767 350.33 17.48 347.947 17.48C345.783 17.48 343.932 18.1767 342.392 19.57C340.852 20.9267 339.935 22.7783 339.642 25.125H356.417Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M380.847 37.39L389.427 12.695H396.082L384.532 43H377.052L365.557 12.695H372.267L380.847 37.39Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M428.596 27.105C428.596 28.2417 428.523 29.2683 428.376 30.185H405.221C405.405 32.605 406.303 34.5483 407.916 36.015C409.53 37.4817 411.51 38.215 413.856 38.215C417.23 38.215 419.613 36.8033 421.006 33.98H427.771C426.855 36.7667 425.186 39.0583 422.766 40.855C420.383 42.615 417.413 43.495 413.856 43.495C410.96 43.495 408.356 42.8533 406.046 41.57C403.773 40.25 401.976 38.4167 400.656 36.07C399.373 33.6867 398.731 30.9367 398.731 27.82C398.731 24.7033 399.355 21.9717 400.601 19.625C401.885 17.2417 403.663 15.4083 405.936 14.125C408.246 12.8417 410.886 12.2 413.856 12.2C416.716 12.2 419.265 12.8233 421.501 14.07C423.738 15.3167 425.48 17.0767 426.726 19.35C427.973 21.5867 428.596 24.1717 428.596 27.105ZM422.051 25.125C422.015 22.815 421.19 20.9633 419.576 19.57C417.963 18.1767 415.965 17.48 413.581 17.48C411.418 17.48 409.566 18.1767 408.026 19.57C406.486 20.9267 405.57 22.7783 405.276 25.125H422.051Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M441.037 2.3V43H434.767V2.3H441.037Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M462.414 43.495C459.554 43.495 456.969 42.8533 454.659 41.57C452.349 40.25 450.534 38.4167 449.214 36.07C447.894 33.6867 447.234 30.9367 447.234 27.82C447.234 24.74 447.912 22.0083 449.269 19.625C450.625 17.2417 452.477 15.4083 454.824 14.125C457.17 12.8417 459.792 12.2 462.689 12.2C465.585 12.2 468.207 12.8417 470.554 14.125C472.9 15.4083 474.752 17.2417 476.109 19.625C477.465 22.0083 478.144 24.74 478.144 27.82C478.144 30.9 477.447 33.6317 476.054 36.015C474.66 38.3983 472.754 40.25 470.334 41.57C467.95 42.8533 465.31 43.495 462.414 43.495ZM462.414 38.05C464.027 38.05 465.53 37.665 466.924 36.895C468.354 36.125 469.509 34.97 470.389 33.43C471.269 31.89 471.709 30.02 471.709 27.82C471.709 25.62 471.287 23.7683 470.444 22.265C469.6 20.725 468.482 19.57 467.089 18.8C465.695 18.03 464.192 17.645 462.579 17.645C460.965 17.645 459.462 18.03 458.069 18.8C456.712 19.57 455.63 20.725 454.824 22.265C454.017 23.7683 453.614 25.62 453.614 27.82C453.614 31.0833 454.439 33.6133 456.089 35.41C457.775 37.17 459.884 38.05 462.414 38.05Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M490.612 17.15C491.675 15.7567 493.123 14.5833 494.957 13.63C496.79 12.6767 498.862 12.2 501.172 12.2C503.812 12.2 506.213 12.86 508.377 14.18C510.577 15.4633 512.3 17.2783 513.547 19.625C514.793 21.9717 515.417 24.6667 515.417 27.71C515.417 30.7533 514.793 33.485 513.547 35.905C512.3 38.2883 510.577 40.1583 508.377 41.515C506.213 42.835 503.812 43.495 501.172 43.495C498.862 43.495 496.808 43.0367 495.012 42.12C493.215 41.1667 491.748 39.9933 490.612 38.6V57.41H484.342V12.695H490.612V17.15ZM509.037 27.71C509.037 25.62 508.597 23.8233 507.717 22.32C506.873 20.78 505.737 19.625 504.307 18.855C502.913 18.0483 501.41 17.645 499.797 17.645C498.22 17.645 496.717 18.0483 495.287 18.855C493.893 19.6617 492.757 20.835 491.877 22.375C491.033 23.915 490.612 25.73 490.612 27.82C490.612 29.91 491.033 31.7433 491.877 33.32C492.757 34.86 493.893 36.0333 495.287 36.84C496.717 37.6467 498.22 38.05 499.797 38.05C501.41 38.05 502.913 37.6467 504.307 36.84C505.737 35.9967 506.873 34.7867 507.717 33.21C508.597 31.6333 509.037 29.8 509.037 27.71Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M549.392 27.105C549.392 28.2417 549.319 29.2683 549.172 30.185H526.017C526.201 32.605 527.099 34.5483 528.712 36.015C530.325 37.4817 532.305 38.215 534.652 38.215C538.025 38.215 540.409 36.8033 541.802 33.98H548.567C547.651 36.7667 545.982 39.0583 543.562 40.855C541.179 42.615 538.209 43.495 534.652 43.495C531.755 43.495 529.152 42.8533 526.842 41.57C524.569 40.25 522.772 38.4167 521.452 36.07C520.169 33.6867 519.527 30.9367 519.527 27.82C519.527 24.7033 520.151 21.9717 521.397 19.625C522.681 17.2417 524.459 15.4083 526.732 14.125C529.042 12.8417 531.682 12.2 534.652 12.2C537.512 12.2 540.061 12.8233 542.297 14.07C544.534 15.3167 546.276 17.0767 547.522 19.35C548.769 21.5867 549.392 24.1717 549.392 27.105ZM542.847 25.125C542.811 22.815 541.986 20.9633 540.372 19.57C538.759 18.1767 536.761 17.48 534.377 17.48C532.214 17.48 530.362 18.1767 528.822 19.57C527.282 20.9267 526.366 22.7783 526.072 25.125H542.847Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+          <path
+            d="M561.833 17.095C562.749 15.555 563.959 14.3633 565.463 13.52C567.003 12.64 568.817 12.2 570.907 12.2V18.69H569.312C566.856 18.69 564.986 19.3133 563.703 20.56C562.456 21.8067 561.833 23.97 561.833 27.05V43H555.562V12.695H561.833V17.095Z"
+            stroke="white"
+            stroke-width="2"
+            mask="url(#path-1-outside-1)"
+          />
+        </svg>
 
-        <h2 class="sm-heading">
-          <span
-            class="txt-type"
-            data-wait="1000"
-            data-words='["Web Developer", "Programmer", "Designer"]'
-          ></span>
-        </h2>
-        <div class="icons">
-          <a target="_blank" href="https://twitter.com/HashimiYaseen">
-            <i class="fab fa-twitter fa-2x"></i>
-          </a>
-          <a target="_blank" href="https://www.facebook.com/AlhashimiYaseen">
-            <i class="fab fa-facebook fa-2x"></i>
-          </a>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/yaseen-al-hashimi-3174a9190/"
+        <h3>
+          Specializing in custom theme development. If you're a business seeking
+          a web presence or are looking to hire, contact me
+          <a href="#contact">here</a>.
+        </h3>
+        <button>See my work</button>
+      </div>
+    </main>
+    <!---------------------------------------------About---------------------------------------------------->
+    <div class="ad-container">
+      <div class="ad-box">
+        <img src="./img/ad-1.png" />
+        <h4>Design & Layout</h4>
+        <h6>
+          Simple content structure, organized design patterns, thoughtful
+          interactions.
+        </h6>
+      </div>
+      <div class="ad-box">
+        <img src="./img/ad-2.png" />
+        <h4>Front-end Development</h4>
+        <h6>
+          Responsive & cross-browser web applications for effective UX & high
+          performance.
+        </h6>
+      </div>
+      <div class="ad-box">
+        <img src="./img/ad-3.png" />
+        <h4>Optimization</h4>
+        <h6>
+          Reusable code, easy to read and to maintain & well-tested to ensure
+          functionality.
+        </h6>
+      </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------->
+    <main id="about">
+      <!-------------------------------------------------------------------------->
+
+      <!-------------------------------------------------------------------------->
+      <div class="about-info">
+        <div class="about-text">
+          <h2 class="about-title">About <span id="highlight">me</span></h2>
+          <h4 class="about-side">
+            Interested in the entire front-end spectrum and working on ambitious
+            projects with positive people.
+          </h4>
+          <p class="about-para">
+            A well-organized person, problem solver, independent employee with
+            high attention to detail, master in info-communication, easily
+            adapts to new conditions, constantly learning, enjoys videogames and
+            sports & food especially pizza. If you're interested to learn more,
+            feel free to ask me.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <!------------------------------------------------------------------------->
+          <svg
+            id="062a65d4-6310-416e-8fb8-777315adf84b"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="853.53"
+            height="770"
+            viewBox="0 0 853.53 770"
           >
-            <i class="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a target="_blank" href="https://github.com/Nitronoise">
-            <i class="fab fa-github fa-2x"></i>
-          </a>
+            <defs>
+              <linearGradient
+                id="7db19e5e-7cc3-41df-8a16-c81cf46c1195"
+                x1="758.38"
+                y1="801.59"
+                x2="758.38"
+                y2="131.56"
+                gradientTransform="translate(-136.27 -110.44) rotate(4.65)"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="gray" stop-opacity="0.25" />
+                <stop offset="0.54" stop-color="gray" stop-opacity="0.12" />
+                <stop offset="1" stop-color="gray" stop-opacity="0.1" />
+              </linearGradient>
+              <linearGradient
+                id="87908c47-1c47-4a2f-b745-20cb7009bb75"
+                x1="685.97"
+                y1="797.2"
+                x2="685.97"
+                y2="126.94"
+                gradientTransform="translate(-242.89 51.18) rotate(-10.87)"
+                xlink:href="#7db19e5e-7cc3-41df-8a16-c81cf46c1195"
+              />
+              <linearGradient
+                id="f482b758-09b8-4320-b57c-ecd1bdf3658e"
+                x1="517.93"
+                y1="719.46"
+                x2="517.93"
+                y2="49.68"
+                gradientTransform="matrix(1, 0, 0, 1, 0, 0)"
+                xlink:href="#7db19e5e-7cc3-41df-8a16-c81cf46c1195"
+              />
+              <linearGradient
+                id="720977dd-28dd-4cd1-b9d4-02f8d793e7ce"
+                x1="553.48"
+                y1="380.79"
+                x2="559.93"
+                y2="535.01"
+                gradientTransform="matrix(-1, 0.01, -0.01, -1, 1253.94, 688.13)"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-opacity="0.12" />
+                <stop offset="0.55" stop-opacity="0.09" />
+                <stop offset="1" stop-opacity="0.02" />
+              </linearGradient>
+              <linearGradient
+                id="e8979000-d63e-4fe0-8af1-0dfdd65d3420"
+                x1="356.17"
+                y1="639.4"
+                x2="356.17"
+                y2="574"
+                gradientTransform="matrix(1, 0, 0, 1, 0, 0)"
+                xlink:href="#7db19e5e-7cc3-41df-8a16-c81cf46c1195"
+              />
+              <linearGradient
+                id="3889af47-bc7c-4009-b8ee-af9d60c73d61"
+                x1="296"
+                y1="675.66"
+                x2="296"
+                y2="478.3"
+                gradientTransform="matrix(1, 0, 0, 1, 0, 0)"
+                xlink:href="#7db19e5e-7cc3-41df-8a16-c81cf46c1195"
+              />
+            </defs>
+            <title>files</title>
+            <polygon
+              points="799.57 770 309.95 729.85 363.91 62.28 853.53 102.43 799.57 770"
+              fill="url(#7db19e5e-7cc3-41df-8a16-c81cf46c1195)"
+            />
+            <polygon
+              points="793.7 760.47 317.27 721.39 369.78 71.81 846.21 110.88 793.7 760.47"
+              fill="#3f079d"
+            />
+            <polygon
+              points="821.86 657.75 339.44 751.09 214 93.34 696.42 0 821.86 657.75"
+              fill="url(#87908c47-1c47-4a2f-b745-20cb7009bb75)"
+            />
+            <polygon
+              points="813.67 650.15 344.25 740.98 222.19 100.94 691.61 10.12 813.67 650.15"
+              fill="#e0e0e0"
+            />
+            <rect
+              x="272.31"
+              y="49.68"
+              width="491.24"
+              height="669.78"
+              fill="url(#f482b758-09b8-4320-b57c-ecd1bdf3658e)"
+            />
+            <rect
+              x="278.93"
+              y="58.7"
+              width="478.01"
+              height="651.73"
+              fill="#fff"
+            />
+            <path
+              d="M613.25,236.15c.52,43.61,36.05,78.54,79.35,78s78-36.31,77.46-79.93a79,79,0,0,0-52.75-73.69l.24,20.34A26.73,26.73,0,0,1,691.32,208h0a26.72,26.72,0,0,1-26.87-26.42l-.24-20.34A79,79,0,0,0,613.25,236.15Z"
+              transform="translate(-173.24 -65)"
+              fill="url(#720977dd-28dd-4cd1-b9d4-02f8d793e7ce)"
+            />
+            <path
+              d="M770.09,227.84c0-43.62-35.1-79-78.41-79s-78.41,35.36-78.41,79a79,79,0,0,0,51.86,74.33V281.83a26.72,26.72,0,0,1,26.55-26.74h0a26.72,26.72,0,0,1,26.55,26.74v20.35A79,79,0,0,0,770.09,227.84Z"
+              transform="translate(-173.24 -65)"
+              fill="#3f079d"
+            />
+            <ellipse
+              cx="518.49"
+              cy="151.98"
+              rx="30.14"
+              ry="30.36"
+              fill="#fff"
+              stroke="#fff"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M691.68,255.09h0a26.72,26.72,0,0,0-26.55,26.74v20.35a78.17,78.17,0,0,0,53.1,0V281.83A26.72,26.72,0,0,0,691.68,255.09Z"
+              transform="translate(-173.24 -65)"
+              fill="#fff"
+              stroke="#fff"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M661.33,215.3A29.63,29.63,0,0,1,658.12,200a20.48,20.48,0,0,1,6.68-13.85c4.39-3.77,10.34-5.1,16.09-5.56s11.58-.18,17.24-1.31a36,36,0,0,0,23-15.72c.36,4.45.72,9-.13,13.36s-3.09,8.7-6.87,11c4.58-2.13,4.08,2.87,3.09,5.86,2.27,2.76,7.78,3.22,8.06,6.79s.23,7.26-1.15,10.55.1,9.1-3.44,9.35"
+              transform="translate(-173.24 -65)"
+              fill="#fff"
+              stroke="#fff"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M715.81,187.26s21,1.85,6.06,33.29"
+              transform="translate(-173.24 -65)"
+              fill="#fff"
+            />
+            <rect
+              x="323.71"
+              y="574"
+              width="64.93"
+              height="65.4"
+              fill="url(#e8979000-d63e-4fe0-8af1-0dfdd65d3420)"
+            />
+            <rect
+              x="329.3"
+              y="579.64"
+              width="53.73"
+              height="54.12"
+              fill="#3f079d"
+            />
+            <rect
+              x="440.13"
+              y="303.38"
+              width="156.72"
+              height="11.28"
+              fill="#69f0ae"
+            />
+            <rect
+              x="440.13"
+              y="319.17"
+              width="264.19"
+              height="11.28"
+              fill="#e0e0e0"
+            />
+            <rect
+              x="440.13"
+              y="334.95"
+              width="264.19"
+              height="11.28"
+              fill="#e0e0e0"
+            />
+            <rect
+              x="440.13"
+              y="444.33"
+              width="156.72"
+              height="11.28"
+              fill="#69f0ae"
+            />
+            <rect
+              x="440.13"
+              y="460.11"
+              width="264.19"
+              height="11.28"
+              fill="#e0e0e0"
+            />
+            <rect
+              x="440.13"
+              y="475.9"
+              width="264.19"
+              height="11.28"
+              fill="#e0e0e0"
+            />
+            <rect
+              x="440.13"
+              y="585.27"
+              width="156.72"
+              height="11.28"
+              fill="#3f079d"
+            />
+            <rect
+              x="440.13"
+              y="601.06"
+              width="264.19"
+              height="11.28"
+              fill="#e0e0e0"
+            />
+            <rect
+              x="440.13"
+              y="616.85"
+              width="264.19"
+              height="11.28"
+              fill="#e0e0e0"
+            />
+            <path
+              d="M405.46,569.67H368.88c-3.72-51.08-46-91.37-97.67-91.37-54.11,0-98,44.18-98,98.68s43.86,98.68,98,98.68c47.48,0,87.06-34,96-79.19h38.21a13.4,13.4,0,0,0,0-26.8Z"
+              transform="translate(-173.24 -65)"
+              fill="url(#3889af47-bc7c-4009-b8ee-af9d60c73d61)"
+            />
+            <path
+              d="M273.05,485.65c-50.08,0-90.68,40.89-90.68,91.33s40.6,91.33,90.68,91.33,90.68-40.89,90.68-91.33S323.13,485.65,273.05,485.65Zm0,169.14c-42.66,0-77.24-34.83-77.24-77.8s34.58-77.8,77.24-77.8S350.29,534,350.29,577,315.71,654.78,273.05,654.78Z"
+              transform="translate(-173.24 -65)"
+              fill="#fff"
+            />
+            <path
+              d="M182.66,505.22h42.73a11,11,0,0,1,11,11V519a11,11,0,0,1-11,11H182.66a0,0,0,0,1,0,0V505.22A0,0,0,0,1,182.66,505.22Z"
+              fill="#fff"
+            />
+            <ellipse
+              cx="99.82"
+              cy="511.98"
+              rx="78.36"
+              ry="78.93"
+              fill="#3f079d"
+            />
+            <path
+              d="M281.81,547.55c-6.11,3.2-9.06,12-5,17.62,1.62,2.23,4,3.71,6.07,5.55s3.82,4.41,3.46,7.15a10,10,0,0,1-2.25,4.51c-4.11,5.44-9.18,10.61-10.51,17.31-1.2,6.08,1,12.44,4.58,17.49,2,2.87,4.69,5.53,8.08,6.45,3.75,1,7.81-.32,11-2.61s5.54-5.45,7.88-8.56l5.45-7.24c1.49-2,3-4.13,3.16-6.61.19-4.26-3.8-7.45-5.16-11.48-2.52-7.48,4.43-15.21,3.5-23.06C310.64,552.21,292.34,542,281.81,547.55Z"
+              transform="translate(-173.24 -65)"
+              opacity="0.2"
+            />
+          </svg>
+          <!------------------------------------------------------------------------->
+        </div>
+      </div>
+      <h1 class="skills-title">
+        Skills & <span id="highlight">technologies</span>
+      </h1>
+      <div class="skills-container">
+        <div class="swiper-slide"><img src="./img/HTML.png" /></div>
+        <div class="swiper-slide"><img src="./img/CSS.png" /></div>
+        <div class="swiper-slide"><img src="./img/JS.png" /></div>
+        <div class="swiper-slide"><img src="./img/React.png" /></div>
+        <div class="swiper-slide"><img src="./img/Jquery.png" /></div>
+        <div class="swiper-slide"><img src="./img/Sass.png" /></div>
+        <div class="swiper-slide"><img src="./img/Gulp.png" /></div>
+        <div class="swiper-slide"><img src="./img/Bootstrap.png" /></div>
+        <div class="swiper-slide"><img src="./img/WP.png" /></div>
+        <div class="swiper-slide"><img src="./img/PS.png" /></div>
+        <div class="swiper-slide"><img src="./img/illustrator.png" /></div>
+        <div class="swiper-slide"><img src="./img/Figma.png" /></div>
+        <div class="swiper-slide"><img src="./img/Npm.png" /></div>
+        <div class="swiper-slide"><img src="./img/Git.png" /></div>
+      </div>
+    </main>
+
+    <!----------------------------------------------Projects--------------------------------------------------->
+    <div id="line"></div>
+    <main id="projects">
+      <h1>Portfolio</h1>
+      <div class="project-container">
+        <div class="project-image">
+          <img src="./img/Photography.png" />
+        </div>
+        <div class="project-info">
+          <h2>Photography</h2>
+          <h4>
+            A Landing page for photographers displaying portfolio and offers &
+            other information.
+          </h4>
+          <div class="buttons">
+            <a>GitHub</a>
+            <a class="no-bg">Preview</a>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------------------->
+      <div class="project-container">
+        <div class="project-image">
+          <img src="./img/Photography.png" />
+        </div>
+        <div class="project-info">
+          <h2>Iron Thread</h2>
+          <h4>
+            A fashion and e-commerce website for clothing & sportswear displays
+            products info and desinged clothes.
+          </h4>
+          <div class="buttons">
+            <a>GitHub</a>
+            <a class="no-bg">Preview</a>
+          </div>
+        </div>
+      </div>
+      <!---------------------------------------------->
+      <div class="project-container">
+        <div class="project-image">
+          <img src="./img/Creative.png" />
+        </div>
+        <div class="project-info">
+          <h2>Creative</h2>
+          <h4>
+            A multi-purpose business website with specially designed components
+            and modern layout.
+          </h4>
+          <div class="buttons">
+            <a>GitHub</a>
+            <a class="no-bg">Preview</a>
+          </div>
         </div>
       </div>
     </main>
-    <script src="js/main.js"></script>
-    <script src="js/app.js"></script>
+    <div id="line"></div>
+
+    <!----------------------------------------------Contact--------------------------------------------------->
+    <main id="contact">
+      <h2>Send me a message</h2>
+      <form name="portfolio-contact" method="POST" data-netlify="true" id="contact-form">
+        <div class="input-name">
+          <label >Name</label>
+          <input name="name" type="text" />
+        </div>
+
+        <div id="input" class="input-email">
+          <label>E-mail</label>
+          <input name="email" type="email" />
+        </div>
+
+        <div id="input" class="input-text">
+          <label>Message </label>
+          <textarea name="message"></textarea>
+        </div>
+      </form>
+
+      <input value="Send" id="submit" type="submit" />
+    </main>
+
+    <footer id="main-footer">
+      <div class="footer-content">
+        <img src="./img/Logo-svg.svg" />
+        <h3>Learning & evolving everyday</h3>
+
+        <div class="icons">
+          <div id="circle">
+            <a target="_blank" href="https://twitter.com/HashimiYaseen">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+          </div>
+          <div id="circle">
+            <a target="_blank" href="https://www.facebook.com/AlhashimiYaseen">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+          </div>
+          <div id="circle">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/yaseen-al-hashimi-3174a9190/"
+            >
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </div>
+          <div id="circle">
+            <a target="_blank" href="https://github.com/Nitronoise">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <p>Designed by me © 2020</p>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
