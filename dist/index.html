@@ -552,7 +552,8 @@
     <!----------------------------------------------Contact--------------------------------------------------->
     <main id="contact">
       <h2>Send me a message</h2>
-      <form name="portfolio-contact" method="POST" data-netlify="true" id="contact-form">
+      <form name="portfolio-contact" action="POST" data-netlify="true" >
+        <div id="contact-form">
         <div class="input-name">
           <label >Name</label>
           <input name="name" type="text" />
@@ -567,9 +568,12 @@
           <label>Message </label>
           <textarea name="message"></textarea>
         </div>
+      </div>
+      <div id="form-btn">
+        <input value="Send" id="submit" type="submit" />
+      </div>
       </form>
 
-      <input value="Send" id="submit" type="submit" />
     </main>
 
     <footer id="main-footer">

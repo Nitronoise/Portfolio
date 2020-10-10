@@ -283,6 +283,7 @@ header {
   width: 600px;
   height: auto;
   margin: 0 auto;
+
   label {
     color: #b8b8b8;
     font-size: 15px;
@@ -332,11 +333,16 @@ header {
     height: 100%;
   }
 }
+#form-btn {
+  width: 100%;
+  @include flex-center;
+  margin: 20px 0;
+}
 #submit {
-  font-size: 20px;
+  font-size: 22px;
   color: $secondary-color;
   border-radius: 30px;
-  padding: 14px 24px;
+  padding: 12px 22px;
   margin-top: 15px;
   border: solid 1px $secondary-color;
   transition: 0.3s;
