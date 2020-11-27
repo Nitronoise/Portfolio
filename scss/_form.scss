@@ -1,0 +1,33 @@
+#form {
+  background: linear-gradient(90deg, #430297, #1537de);
+  height: 100vh;
+  width: 100%;
+  @include flex-center;
+  font-family: Calibri;
+  div {
+    width: auto;
+    height: 200px;
+    background-color: #f8f8f8;
+    font-family: Calibri;
+    @include flex(column);
+    padding: 20px 40px;
+    border-radius: 10px;
+    h1 {
+      font-size: 1.4rem;
+      color: $btn-color;
+    }
+    h2 {
+      font-size: 1.1rem;
+      color: $text-color;
+      font-weight: 500;
+    }
+    a {
+      color: $btn-color;
+      font-size: 1.1rem;
+      .fas {
+        margin-right: 3px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

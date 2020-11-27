@@ -76,7 +76,7 @@
     @include easeOut;
 
     &:hover {
-      color: $btn-color;
+      color: $btn-color !important;
     }
   }
 }
@@ -102,21 +102,21 @@
   z-index: 8;
 
   img {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
   .nav {
     @include flex(row);
     width: 350px;
     a {
-      font-size: 18px;
+      font-size: 16px;
       text-transform: uppercase;
       color: #f8f8f8;
       font-family: Calibri;
       font-weight: 500;
       transition: 0.3s;
       &:hover {
-        color: $btn-color;
+        color: $btn-color !important;
         cursor: pointer;
       }
     }

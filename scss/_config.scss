@@ -8,6 +8,7 @@ $background-opacity: 0.8;
 #highlight {
   color: $secondary-color;
 }
+
 @mixin debug {
   outline: red solid 1px;
 }

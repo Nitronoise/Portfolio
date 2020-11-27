@@ -35,26 +35,39 @@ for (i = 0; i < paths.length; i++) {
   document.querySelector("#SVG").style.opacity = "1";
 }
 
-//------------------------------------------- Sticky navigation---------------------------------
 window.onscroll = () => {
   stickyNav();
+  colorNav();
 };
+//------------------------------------------- Coloring Nav Items---------------------------------
+var nav1 = document.querySelector("#nav-1");
+var nav2 = document.querySelector("#nav-2");
+var nav3 = document.querySelector("#nav-3");
+var nav1Of = document.querySelector("#nav-about").offsetTop;
+var nav2Of = document.querySelector("#nav-projects").offsetTop;
+var nav3Of = document.querySelector("#nav-contact").offsetTop;
 
+  function colorNav(){
+    if (window.pageYOffset < nav1Of) {
+      nav1.style.color = 'white'; nav2.style.color = 'white'; nav3.style.color = 'white';
+    } 
+    if (window.pageYOffset >= nav1Of) {
+      nav1.style.color = 'rgb(0, 189, 223)'; nav2.style.color = 'white'; nav3.style.color = 'white';
+    }
+    if(window.pageYOffset >= nav2Of ){
+      nav1.style.color = 'white'; nav2.style.color = 'rgb(0, 189, 223)'; nav3.style.color = 'white';
+    }
+    if(window.pageYOffset >= nav3Of ){
+       nav1.style.color = 'white'; nav2.style.color = 'white'; nav3.style.color = 'rgb(0, 189, 223)';
+
+    }
+    }
+//------------------------------------------- Sticky navigation ---------------------------------
 var navLimit = document.getElementById("nav-limit");
 var nav = document.getElementById("sticky-wrap");
 var wrapCover = document.getElementById("wrap-cover");
 var container = document.getElementById("home");
 var body = document.querySelector("body");
-
-setInterval(() => {
-  if (body.clientWidth > 1045 && showMenu === true) {
-    menuBtn.classList.remove("close");
-    menu.classList.remove("show");
-    menuNav.classList.remove("show");
-    navItems.forEach((item) => item.classList.remove("show"));
-    showMenu = false;
-  }
-}, 200);
 
 var sticky = navLimit.offsetTop;
 
@@ -67,3 +80,13 @@ function stickyNav() {
     container.style.paddingTop = "0";
   }
 }
+//------------------------------------------- Menu Auto-close ---------------------------------
+setInterval(() => {
+  if (body.clientWidth > 1045 && showMenu === true) {
+    menuBtn.classList.remove("close");
+    menu.classList.remove("show");
+    menuNav.classList.remove("show");
+    navItems.forEach((item) => item.classList.remove("show"));
+    showMenu = false;
+  }
+}, 200);

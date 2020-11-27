@@ -58,7 +58,7 @@ header {
     @include flex-center;
 
     button {
-      font-size: 18px;
+      font-size: 17px;
       color: #f9f9f9;
       border-radius: 35px;
       transition: 0.3s ease;
@@ -69,6 +69,7 @@ header {
       font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       &:hover {
         cursor: pointer;
+        opacity: 0.9;
       }
     }
   }
@@ -76,6 +77,13 @@ header {
     animation: fill 0.5s ease forwards 3s;
     fill: transparent;
     opacity: 0;
+  }
+  #here {
+    border-bottom: white dotted 1px;
+    transition: 0.3s;
+    &:hover {
+      color: $btn-color;
+    }
   }
 }
 @keyframes mongo {
@@ -100,10 +108,10 @@ header {
   .ad-box {
     width: 300px;
     height: 300px;
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(247, 247, 247);
     @include flex(column);
     border-radius: 10px;
-    padding: 40px 0;
+    padding: 40px 20px;
     img {
       height: 60px;
       width: 60px;
@@ -157,9 +165,9 @@ header {
   .about-image {
     width: 500px;
     @include flex-center;
-    svg {
+    img {
       height: auto;
-      width: 70%;
+      width: 350px;
     }
   }
 }
@@ -180,10 +188,16 @@ header {
   grid-template-rows: repeat(2, 1fr);
   margin: 60px auto;
   grid-gap: 20px;
+  .skill {
+    @include flex-center;
+  }
   img {
     height: 110px;
     width: 110px;
-    transition: 0.3s all ease-in-out;
+    filter: grayscale(100);
+    &:hover {
+      filter: grayscale(0);
+    }
   }
 }
 
@@ -209,13 +223,28 @@ header {
 }
 .project-container {
   @include flex(row);
-  width: 100%;
+  width: 90%;
   margin: 40px 0;
   padding: 40px 0;
   .project-image {
     img {
       width: 600px;
       height: auto;
+    }
+  }
+  .tools-used {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: auto;
+    h5 {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: $secondary-color;
+      border: 1px solid $secondary-color;
+      padding: 5px 7px;
+      border-radius: 5px;
+      margin-right: 5px;
     }
   }
   .project-info {
@@ -340,20 +369,18 @@ header {
 }
 #submit {
   font-size: 22px;
-  color: $secondary-color;
   border-radius: 30px;
   padding: 12px 22px;
   margin-top: 15px;
   border: solid 1px $secondary-color;
   transition: 0.3s;
-  background-color: $primary-color;
+  color: white;
+  background-color: $secondary-color;
   &:hover {
     cursor: pointer;
-    color: white;
-    background-color: $secondary-color;
   }
 }
-//----------------------------------Contact--------------------------------
+//----------------------------------Footer--------------------------------
 
 #main-footer {
   background-color: $secondary-color;
@@ -407,3 +434,4 @@ header {
 }
 
 @import "mobile";
+@import "form";
