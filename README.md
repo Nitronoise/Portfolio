@@ -4,5 +4,7 @@
 
 ### Fully responsive design.
 
-### Updates coming soon
+### Updates include:
+- Filtering projects
+- Carousel in services
 
